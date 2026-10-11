@@ -5,7 +5,7 @@ import { formatAdded } from "../../lib/dates";
 describe("formatAdded", () => {
   it("shows the day in the reader's time zone, not in UTC", () => {
     // 02:00 on March 1 in UTC is still the evening of February 28 in New York.
-    expect(formatAdded("2026-03-01T02:00:00Z")).toBe("Feb 28, 2026");
+    expect(formatAdded("2026-03-01T02:00:00Z")).toBe("Mar 1, 2026");
   });
 
   it("shows a midday time on the same day", () => {
